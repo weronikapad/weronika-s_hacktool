@@ -15,4 +15,9 @@ A raspberry pi Pico based hardware tool that can be pluged via USB-A or or a con
 -Connectors on PCB for screen, keyboard and battery conection
 
 ## PCB 
-Designed in KiCad, through pico's USB using REPL, pico can send comand to pluged pc, and through UART it can monitor trafic. Independently it can serve as a calculator or a text editor.
+Designed in KiCad, through pico's USB using REPL, pico can send commands to pluged pc and recive and print output, and through UART it can monitor trafic. Independently it can serve as a calculator or a text editor.
+
+**PCB's front copper view in KiCad**
+<img src="images/pcbfcu.png" alt="pcbfcu" width="800"/>
+
+
