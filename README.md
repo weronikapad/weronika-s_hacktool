@@ -2,6 +2,12 @@
 
 A raspberry pi Pico based hardware tool that can be pluged via USB-A or or a connecting wire betwen raspberry's pi pico and a device that you're connecting it to.
 
+
+## 3D model on onshape:
+
+https://cad.onshape.com/documents/8ba63a7496dc739681835abf/w/b2486c84e183ee5c75462b5f/e/727d0ff90b4b33300ac8e23b?renderMode=0&uiState=6a1f47a38e48adf890f3cb43
+
+
 ## Specifics
 Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A and the voltage that pico recives is controled by the power managment. 
 1. specifics to connecting hardware parts
@@ -39,6 +45,7 @@ Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A an
 -LiPo Battry
 -Connectors on PCB for screen, keyboard and battery conection
 
+
 ## PCB 
 Designed in KiCad, through pico's USB using REPL, pico can send commands to pluged pc and recive and print output, and through UART it can monitor trafic. Independently it can serve as a calculator or a text editor.
 
@@ -54,9 +61,11 @@ Designed in KiCad, through pico's USB using REPL, pico can send commands to plug
 
 <img src="images/3dpcb.pdf.jpg" alt="3dpcb.pdf" width="800"/>
 
+
 ## Schematic
 
 <img src="images/Screenshot 2026-06-01 204912.png" alt="Screenshot 2026-06-01 204912" width="800"/>
+
 
 ## detailed description on how to use
 
