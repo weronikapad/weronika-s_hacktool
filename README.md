@@ -13,6 +13,7 @@ Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A an
      - Pin3 -> wrire -> the pin in the keyboard port that the white wire from the picture goes into
      - Pin4 -> wrire -> the pin in the keyboard port that the yellow wire from the picture goes into
 <img src="image/keyboardspecifics.png" alt="pcbfcu" width="800"/>
+
     c) screen (use female to female wires)(look at connector pins on conn_01x09 from KiCad view)
       - Pin1 -> wire -> vcc on the screen
       - Pin2 -> wire -> GND on the screen
@@ -22,6 +23,7 @@ Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A an
       - Pin6 -> wire -> SDI(MOSI) on the screen
       - Pin7 -> wire -> DC on the screen
       - Pin8 -> wire -> LED on the screen
+
   <img src="image/backofscreen.png" alt="screen" width="800"/>
 
 
@@ -46,7 +48,7 @@ Designed in KiCad, through pico's USB using REPL, pico can send commands to plug
 
 **PCB's back copper layer view in KiCad**
 
-<img src="images/pcbbcu.png" alt="pcbfbcu" width="800"/>
+<img src="images/pcbbcu.png" alt="pcbbcu" width="800"/>
 
 **PCB's 3D model, with exact location of specific connectors**
 
