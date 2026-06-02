@@ -52,7 +52,7 @@ Designed in KiCad, through pico's USB using REPL, pico can send commands to plug
 
 **PCB's 3D model, with exact location of specific connectors**
 
-<img src="images/3dpcd.pdf.jpg" alt="3dpcb" width="800"/>
+<img src="images/3dpcb.pdf.jpg" alt="3dpcb.pdf" width="800"/>
 
 ## Schematic
 
