@@ -2,6 +2,7 @@
 
 A raspberry pi Pico based hardware tool that can be pluged via USB-A or or a connecting wire betwen raspberry's pi pico and a device that you're connecting it to.
 
+<img src"images/fallout_zine_template.pdf.png" alt="fallout_zine_template.pdf" width="800"/>
 
 ## 3D model on onshape:
 
