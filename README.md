@@ -11,8 +11,9 @@ https://cad.onshape.com/documents/8ba63a7496dc739681835abf/w/b2486c84e183ee5c754
 ## Specifics
 Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A and the voltage that pico recives is controled by the power managment. 
 1. specifics to connecting hardware parts
-   a) battery
-       - connect it with a male to male wire to a connector pin socket 01x02
+   a) battery:
+      - connect it with a male to male wire to a connector pin socket 01x02
+   
    b) keyboard (look at connector pins on conn_01x04 from KiCad view), (use female to female wires)
      - Pin1 -> wrire -> the pin in the keyboard port that the black wire from the picture goes into
      - Pin2 -> wrire -> the pin in the keyboard port that the red wire from the picture goes into
