@@ -94,5 +94,3 @@ while True:
                     show("unknown command: " + user)
                 
                 
-            
-            

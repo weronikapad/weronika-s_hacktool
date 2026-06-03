@@ -5,9 +5,11 @@ def run(show, get_input):
     
     while True:
         text = get_input()
-        open.(filename 'a').write(text)
+        with open(filename, 'a') as f:
+            f.write(text)
         if text == "esc":
-            open.(filename 'a').close()
+            with open(filename, 'a') as f:
+                f.close()
             return 
     
     

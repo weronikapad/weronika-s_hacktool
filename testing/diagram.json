@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "verison": 1,
     "author": "weronika.pad",
@@ -180,4 +181,188 @@
             "uno:USB_A_CNCTech_1001-011-01101_Horizontal.1", "TP4057.4", "red", ["h3", "*", "v-1", "*", "h3", "*", "v-1"]
         ]
     ]
+=======
+{
+    "verison": 1,
+    "author": "weronika.pad",
+    "editor": "wokwi",
+    "parts":[
+        {
+        "id": "RaspberryPi_Pico",
+        "type": "wokwi-RaspberryPi_Pico",
+        "left": 103,
+        "top": 78,
+        "attrs": {
+            "color": "green"
+        }
+        },
+        {
+            "id": "Conn_01x09", 
+            "type": "wokwi-Conn_01x09",
+            "left": 118,
+            "top": 68,
+            "attrs": {
+                "color": "grey"
+            }
+        },
+        {
+            "id": "Conn_01x04_Pin", 
+            "type": "wokwi-Conn_01x04_Pin",
+            "left": 118,
+            "top": 93,
+            "attrs": {
+                "color": "grey"
+            }
+        },
+        {
+            "id": "R320000hm", 
+            "type": "wokwi-R320000hm",
+            "left": 76,
+            "top": 92,
+            "attrs": {
+                "color": "red"
+            }
+        },
+        {
+            "id": "Conn_01x02", 
+            "type": "wokwi-Conn_01x02",
+            "left": 84,
+            "top": 85,
+            "attrs": {
+                "color": "grey"
+            }
+        },
+        {
+            "id": "TP4057", 
+            "type": "wokwi-TP4057",
+            "left": 83,
+            "top": 93,
+            "attrs": {
+                "color": "yellow"
+            }
+        },
+        {
+            "id": "USB_A_CNCTech_1001-011-01101_Horizontal", 
+            "type": "wokwi-USB_USB_A_CNCTech_1001-011-01101_Horizontal",
+            "left": 80,
+            "top": 108,
+            "attrs": {
+                "color": "yellow"
+            }
+        },
+        {
+            "id": "Micro_SD_Card", 
+            "type": "wokwi-Micro_SD_Card",
+            "left": 81,
+            "top": 67,
+            "attrs": {
+                "color": "yellow"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "uno:RaspberryPi_Pico.1", "Conn_01x04_Pin:4", "red", ["h6", "*", "v5"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.2", "Conn_01x04_Pin:4", "red", ["h6", "*", "v4"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.8", "GND", "blue", ["h0", "*", "v4"]
+        ],
+        [
+            "uno:Conn_01x09.2", "GND", "blue", ["h-1", "*", "v-2"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.11", "Conn_01x09.4", "red", ["h6", "*", "v5"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.12", "Conn_01x09.3", "red", ["h6", "*", "v0"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.13", "GND", "blue", ["h0", "*", "v4"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.14", "Conn_01x09.5", "red", ["h0", "*", "v6"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.15", "Conn_01x09.6", "red", ["h0", "*", "v6"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.16", "Conn_01x09.7", "red", ["h0", "*", "v6"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.17", "Conn_01x09.8", "red", ["h0", "*", "v6"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.18", "GND", "blue", ["h0", "*", "v3"]
+        ],
+        [
+            "uno:Conn_01x09.9", "Conn_01x04_Pin.2", "red", ["v1", "*", "h-33", "*", "v-1"]
+        ],
+        [
+            "uno:Conn_01x04_Pin.1", "GND", "blue", ["h3", "*", "v0"]
+        ],
+        [
+            "uno:Conn_01x09.9", "Micro_SD_Card.6", "red", ["h14", "*", "v-42", "*", "h-13"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.21", "Micro_SD_Card.7", "red", ["v-18", "*", "h-8"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.22", "Micro_SD_Card.2", "red", ["v-18", "*", "h-13"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.23", "GND", "blue", ["h0", "*", "v-4"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.24", "Micro_SD_Card.5", "red", ["v-6", "*", "h-4", "*","v-12"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.25", "Micro_SD_Card.3", "red", ["v-6", "*", "h-4", "*","v-12"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.28", "GND", "blue", ["v-4", "*", "h0"]
+        ],
+        [
+            "uno:Micro_SD_Card.4", "GND", "blue", ["v2", "*", "h0"]
+        ],
+        [
+            "uno:Micro_SD_Card.6", "RaspberryPi_Pico.36", "red", ["v18", "*", "h-28"]
+        ],
+        [
+            "uno:Conn_01x02.1", "TP4057.3", "red", ["v0", "*", "h-5"]
+        ],
+        [
+            "uno:Conn_01x02.2", "GND", "blue", ["v-3", "*", "h4"]
+        ],
+        [
+            "uno:TP4057.2", "GND", "blue", ["v2", "*", "h-1"]
+        ],
+        [
+            "uno:TP4057.3", "RaspberryPi_Pico.39", "red", ["h-5", "*", "v7", "h-5"]
+        ],
+        [
+            "uno:TP4057.4", "Conn_01x04_Pin.2", "red", ["h11", "*", "v-11", "*", "h31", "*", "v38", "*", "h-42" ]
+        ],
+        [
+            "uno:TP4057.4", "RaspberryPi_Pico.40", "red", ["v-4", "*", "h7", "*", "v-7", "*", "h3", "*", "v-1" ]
+        ],
+        [
+            "uno:TP4057.6", "R320000hm.2", "red", ["h-1", "*", "v7", "*", "h1"]
+        ],
+        [
+            "uno:R320000hm.1", "GND", "blue", ["h0", "*", "v2"]
+        ],
+        [
+            "uno:RaspberryPi_Pico.38", "GND", "blue", ["v-4", "*", "h2"]
+        ],
+        [
+            "uno:USB_A_CNCTech_1001-011-01101_Horizontal.4", "GND", "blue", ["v0", "*", "h2"]
+        ],
+        [
+            "uno:USB_A_CNCTech_1001-011-01101_Horizontal.1", "TP4057.4", "red", ["h3", "*", "v-1", "*", "h3", "*", "v-1"]
+        ]
+    ]
+>>>>>>> b0f9ea5f0ec2748a1e2dd75dc53023d8b30830b2
 }
