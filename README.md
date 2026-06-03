@@ -100,6 +100,7 @@ Designed in KiCad, through pico's USB using REPL, pico can send commands to plug
 
 ## credits:
 image from the magazine page, originaly distributed by kylatcarter on pinterest: https://pl.pinterest.com/pin/1135399756078582773/ 
+readme structure inspired by notaroomba from github
 
         
 
