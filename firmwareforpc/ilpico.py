@@ -7,20 +7,19 @@ import sys
 print("running")
 def admin():
     try:
-        print(ctypes.windll.shell32.IsUserAdmin)
-        return ctypes.windll.shell32.IsUserAdmin
+        return ctypes.windll.shell32.IsUserAdmin()
     except:
         return False
 if not admin():
-    ctypes.windll.shell32.ShellExecuteW(    None, "run as", sys.executable, " ".join(sys.argv), None, 1)
-    sys.exit
+    ctypes.windll.shell32.ShellExecuteW(    None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+    sys.exit()
 
 from serial.tools import list_ports
 
 def find_pico():
-    ports = list_ports()
+    ports = list_ports.comports()
     for port in ports:
-        if "RP2040" in list_ports or "USB Serial" in list_ports:
+        if "RP2040" in port.description or "USB Serial" in port.description:
             return port.device
     return None
 port = find_pico()
@@ -44,17 +43,18 @@ while True:
 
     if textplsc.startswith("cmd: "):
         cmd = textplsc[5:]
-    if cmd.startswith("fech "):
-        filename = cmd.slip(" ")[1]
-        try:
-            f = open(filename, "r")
-            data = f.read
-            f.close()
-            pico.write((data).encode())
-        except:
-            pico.write((filename + " not found").encode())
+        if cmd.startswith("fech "):
+            filename = cmd.split(" ")[1]
+            try:
+                f = open(filename, "r")
+                data = f.read()
+                f.close()
+                pico.write(data.encode())
+            except:
+                pico.write((filename + " not found").encode())
     else:
-        result = subprocess.run(cmd, shell = True, capture.output = True, text = True )
+        result = subprocess.run(cmd, shell = True, capture_output = True, text = True )
+        output = result.stdout
         if output == "":
             output = result.stderr
-        pico.write((output).encode())
+        pico.write(output.encode())
