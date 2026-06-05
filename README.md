@@ -1,8 +1,8 @@
 ## Weronika's Hacktool
 
-A raspberry pi Pico based hardware tool that can be pluged via USB-A or or a connecting wire betwen raspberry's pi pico and a device that you're connecting it to.
+A Raspberry pi Pico based hardware tool that can be plugged in via USB-A or or a connecting wire between raspberry's pi pico and a device that you're connecting it to.
 
-<img src="images/fallout_zine_template.pdf.png" alt="fallout_zine_template.pdf" width="800"/>
+<img src="images/fallout_zine_template.pdf (3).png" alt="fallout_zine_template.pdf (3)" width="800"/>
 
 ## 3D model on onshape:
 
@@ -10,16 +10,16 @@ https://cad.onshape.com/documents/8ba63a7496dc739681835abf/w/b2486c84e183ee5c754
 
 
 ## Specifics
-Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A and the voltage that pico recives is controled by the power managment. 
+Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A and the voltage that pico receives is controled by the power manager. 
 1. specifics to connecting hardware parts
    a) battery:
       - connect it with a male to male wire to a connector pin socket 01x02
    
    b) keyboard (look at connector pins on conn_01x04 from KiCad view), (use female to female wires)
-     - Pin1 -> wrire -> the pin in the keyboard port that the black wire from the picture goes into
-     - Pin2 -> wrire -> the pin in the keyboard port that the red wire from the picture goes into
-     - Pin3 -> wrire -> the pin in the keyboard port that the white wire from the picture goes into
-     - Pin4 -> wrire -> the pin in the keyboard port that the yellow wire from the picture goes into
+     - Pin1 -> wire -> the pin in the keyboard port that the black wire from the picture goes into
+     - Pin2 -> wire -> the pin in the keyboard port that the red wire from the picture goes into
+     - Pin3 -> wire -> the pin in the keyboard port that the white wire from the picture goes into
+     - Pin4 -> wire -> the pin in the keyboard port that the yellow wire from the picture goes into
 <img src="images/keyboardspecifics.png" alt="keyboardspecifics" width="800"/>
 
     c) screen (use female to female wires)(look at connector pins on conn_01x09 from KiCad view)
@@ -44,12 +44,12 @@ Raspberry pi pico is powered by a LiPo battery, that is charged through USB-A an
 -Power manager (TP4057)
 -LCD display 
 -Keyboard
--LiPo Battry
+-LiPo Battery
 -Connectors on PCB for screen, keyboard and battery conection
 
 
 ## PCB 
-Designed in KiCad, through pico's USB using REPL, pico can send commands to pluged pc and recive and print output, and through UART it can monitor trafic. Independently it can serve as a calculator or a text editor.
+Designed in KiCad, through pico's USB using REPL, pico can send commands to pluged pc and receive and print output, and through UART it can monitor traffic. Independently it can serve as a calculator or a text editor.
 
 **PCB's front copper layer view in KiCad**
 
@@ -71,10 +71,10 @@ Designed in KiCad, through pico's USB using REPL, pico can send commands to plug
 
 ## detailed description on how to use
 
-1. dowloand firmware for pico, and pc
-2. dowloand tonny
+1. download firmware for pico, and pc
+2. download Thonny
 3. works best with an sd card connected
-4. before asebeling everything in the box:
+4. before assembling everything in the box:
    - plug raspberry pico via wire to your pc
    - push firmware files onto pico
 5. to stop any program at any time press esc
@@ -83,28 +83,28 @@ Designed in KiCad, through pico's USB using REPL, pico can send commands to plug
    a) for REPL:
       - in the terminal type "repl"
       - then type the command that you wish to run in your pluged device
-     - pico is programed to always run in administrator mode in your pc's cmd so, in order for the rogram to run as inteded you must allow it on your pc
+     - pico is programed to always run in administrator mode in your pc's cmd so, in order for the rogram to run as intended you must allow it on your pc
     b) for UART:
       -in the terminal type "uart"
 7. to use the hacktool independently:
    - connect the pcb to keyboard, screen, and battery
    - charge the battery via USB-A
    a) to use the text editor:
-      - type in the termianl "text" + your filename (it can be alredy saved on sd card or can be created by this command)
+      - type in the terminal "text" + your filename (it can be already saved on sd card or can be created by this command)
         if the file exists:
           - to edit the file type "edit"
           - to delete type "delete"
-          - if you change your mind and you no longer wish to engange with the text editor type "leave"
+          - if you change your mind and you no longer wish to engage with the text editor type "leave"
         if it doesn't:
           - type "create" to create it and open it
           - type "leave" if you don't wish to create
 8. if you forgot any of those commands type "help" in the main terminal
 
+## why i build this:
+I wanted to understand computers and cybersecurity better, i specifically used REPL as i thought it is one of the most universal hacking abilites of raspberry pi pico, I first decided uppon pico because it was all over my feed on tiktok but as it actually turns out it was the perfect fit for my project
+
 ## credits:
-image from the magazine page, originaly distributed by kylatcarter on pinterest: https://pl.pinterest.com/pin/1135399756078582773/ 
+image from the magazine page, originally distributed by kylatcarter on pinterest: https://pl.pinterest.com/pin/1135399756078582773/ 
 readme structure inspired by notaroomba from github
 
         
-
-
-
